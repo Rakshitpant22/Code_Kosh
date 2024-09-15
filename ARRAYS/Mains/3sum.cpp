@@ -19,7 +19,6 @@ set<vector<int>>s;
     
 
 // OPTIMAL APPROACH ---  2 POINTERS
-
 vector<vector<int>> threeSum(vector<int>& nums) {
         sort(nums.begin(),nums.end());
        vector<vector<int>>ans;
