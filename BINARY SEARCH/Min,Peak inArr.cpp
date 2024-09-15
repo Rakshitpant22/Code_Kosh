@@ -1,4 +1,4 @@
- //! Find Minimum in Rotated Sorted Array
+ //! FIND MIN ELEMENT IN ROTATED SORTED ARRAY 
  int findMin(vector<int>& nums) {
         int n=nums.size();
         int low=0,high=n-1;
@@ -17,7 +17,10 @@
  }
 //~ jaha p min element milga utni baar sorted array right times rotate hua haa
 
-//! Find Peak Element
+
+
+//! FIND PEAK ELEMENT 
+// arr[-1]= -inf && arr[n]= -inf 
 int findPeakElement(vector<int>& nums) {
         int n=nums.size();
 
@@ -29,7 +32,7 @@ int findPeakElement(vector<int>& nums) {
         while(low<=high){
             int mid=low+(high-low)/2;
             if(nums[mid]>nums[mid-1] && nums[mid]>nums[mid+1])return mid;
-            else if(nums[low]<=nums[mid] && nums[mid+1]>=nums[mid]){//means if mid>low and mid+1>=mid so its incesing part only shrink search space to low+1
+            else if(nums[low]<=nums[mid] && nums[mid]<=nums[mid+1]){//means if mid>low and mid+1>=mid so its incesing part only shrink search space to low+1
                 low=mid+1;
             }
             else{

@@ -1,3 +1,6 @@
+https://www.geeksforgeeks.org/problems/median-in-a-row-wise-sorted-matrix1527/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=median-in-a-row-wise-sorted-matrix
+//! Median in a row-wise sorted Matrix
+
 // solve calculates no of elements <=  predicted median/(mid) from matrix
 int solve(vector<vector<int>> &matrix,int n,int m,int mid){
     int cnt=0;

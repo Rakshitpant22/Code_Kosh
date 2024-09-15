@@ -1,4 +1,8 @@
-  int findKthPositive(vector<int>& arr, int k) {
+https://leetcode.com/problems/kth-missing-positive-number/description/
+//! KTH MISSING POSITIVE NUMBER
+
+
+int findKthPositive(vector<int>& arr, int k) {
      // ex             2 3 4 7 11
     //SUPPOSED ARR     1 2 3 4  5  6 7 8 9 10 11
 

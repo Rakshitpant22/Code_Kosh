@@ -24,10 +24,9 @@ TC=O(N) SC=O(1)
         for(int i=0;i<n;i++){
             sum+=nums[i];
 
-            if(sum>maxi){
+        if(sum>maxi){
                 maxi=sum;
-            }
-        
+        } 
         if(sum<0){
             sum=0;
         }

@@ -1,5 +1,5 @@
-Single Element in a Sorted Array
-https://leetcode.com/problems/single-element-in-a-sorted-array/description/
+ https://leetcode.com/problems/single-element-in-a-sorted-array/description/
+//! Single Element in a Sorted Array
 
 You are given a sorted array consisting of only integers where every element appears exactly twice, except for one element which appears exactly once.
 Return the single element that appears only once.
