@@ -1,7 +1,7 @@
 //! CONSTRUCTOR 
 // A constructor is a special member function with the same name as the class, invoked to initialize objects when they are created.
 // A constructor that accepts no parameters is called the default constructor. 
-// The default constructor for class A is A(). If no such constructor is defined, then the compiler supplies a default constructor. es  A a;
+// The default constructor for class A is A(). If no such constructor is defined, then the compiler supplies a default constructor. ex  A a;
 // Constructors should be declared in PUBLIC:
 #include<iostream>
 using namespace std;
@@ -36,16 +36,15 @@ int main(){
 //! constructor overloading-->
 // when name of constructor are same but have different parameters 
 
-
 // A reference variable has been used as an argument to the copy constructor. We cannot pass the argument by value to a copy constructor.
 // When no copy constructor is defined, the compiler supplies its own copy constructor.
 
 //! dynamic constructor
-// it is used to allocate the memory to the objects at the run time
-// all other constructor allocate memory at compile time 
-// its done with the help of 'new' operator and with this we can dynamically allot memory  as per user need(flexible)
+// It is used to allocate the memory to the objects at the runtime
+// All other constructor allocate memory at compile time 
+// It's done with the help of 'new' operator and with this we can dynamically allot memory  as per user need(flexible)
 
-ex: 
+example: 
 class customer{
  int size;
  int *p;
@@ -57,13 +56,11 @@ class customer{
  }
 };
 
-
-
 //!DESTRUCTOR  
 // It is the last function that is going to be called before an object is destroyed
 // called by same name as custructor but uses(~) before name 
 // they are automatically called if not made and release the dynamically allocated memory 
-// if we specifically call destructor than it our task to free the memory alloted
+//~ if we specifically call destructor than it our task to free the memory alloted
 
 ex:
 class customer{
@@ -73,7 +70,7 @@ class customer{
     
     customer (string name,int bal){
         this.name=name;
-        balance= new int ;
+        balance= new int;
         *balance=bal
     }
     ~customer(){
@@ -85,9 +82,9 @@ class customer{
 // for dynamically allocated memory we use destructors;
 
 // Use Cases of Destructors
-1.	Memory Management  • Releasing dynamically allocated memory to prevent memory leaks.
-2.	Resource Management• Closing file handles, network sockets, or releasing other system resources.
-3.	RAII (Resource Acquisition Is Initialization)•Ensuring that resources are properly acquired and released by binding their lifecycle to the lifespan of objects.
+// 1.	Memory Management  • Releasing dynamically allocated memory to prevent memory leaks.
+// 2.	Resource Management• Closing file handles, network sockets, or releasing other system resources.
+// 3.	RAII (Resource Acquisition Is Initialization)• Ensuring that resources are properly acquired and released by binding their lifecycle to the lifespan of objects.
 
 
 //  ! Construction and Destruction Order
@@ -104,7 +101,7 @@ class customer{
 #include <iostream>
 class Base {
 public:
-    Base() { std::cout << "Base Constructor" << std::endl; }
+     Base() { std::cout << "Base Constructor" << std::endl; }
     ~Base() { std::cout << "Base Destructor" << std::endl; }
 };
 
