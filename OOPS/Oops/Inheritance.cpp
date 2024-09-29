@@ -68,7 +68,7 @@ class student: public human{ // protected members of base class becomes protecte
 int main()
 {
     student s1("Aditya",23,2345,12000);
-    s1.work(); // as worl function base class m public or derived m public rhega to we can access outsode by child object
+    s1.work(); // as work function base class m public or derived m public rhega to we can access outside by child object
   
 }
 
