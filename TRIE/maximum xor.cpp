@@ -1,6 +1,7 @@
+//^ BIT TRIE IMPLEMENTATION
 
- TC= O(n Log(maximum no))
-   = O(nlog(32))
+//!TC= O(n Log(maximum no))
+//!= O(nlog(32))
 
 class Solution {
 class Trie{
